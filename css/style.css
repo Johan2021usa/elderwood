@@ -7,11 +7,12 @@
     --color-font-dark: #17332F;
     --color-font-shadow-dark: black;
     --color-font-white: white;
+    --color-font--pruple: #FA8799;
 
     --fn-p-line-height: 2rem;
     
     /* SIZE FONTS */
-    --fn-nav-bar-tittle: 2rem;
+    --fn-nav-bar-tittle: 2.1rem;
     --fn-nav-bar-description: 1rem;
     
     --fn-section-tittle: 1.5rem;
@@ -67,10 +68,12 @@ body{
 .website-name__link{
     text-decoration: none;
     color: var(--color-font-dark);
+    /*color: var(--color-font--pruple);*/
     transition: color 0.35s;
 }
 .website-name__link:hover{
-    color: var(--color-font-white);
+    /*color: var(--color-font-white);*/
+    color: var(--color-font--pruple);
 }
 .website-name__icon{
     border-radius: 100px;
@@ -96,14 +99,15 @@ body{
 }
 .navbar__option{
     text-decoration: none;
-    font-weight: normal;
-    font-size: var(--fn-article-tittle);
+    font-weight: bold;
+    font-size: var(--fn-section-tittle);
     color: var(--color-font-dark);
     text-transform: capitalize;
-    transition: color 0.15s;
+    transition: color 0.35s;
 }
 .navbar__option:hover{
-    color: var(--color-font-white);
+    /*color: var(--color-font-white);*/
+    color: var(--color-font--pruple);
 }
 
 /* MAIN */
@@ -169,8 +173,10 @@ body{
 .section-info__description--high-contrast{
     color: var(--color-font-white);
     font-size: var(--fn-section-paragraph-high-contrast);
-    text-shadow: var(--color-font-shadow-dark) 0rem 0.1rem 0.5rem;
+    text-shadow: var(--color-font-shadow-dark) 0rem 0rem 0.3rem;
     text-align: center;
+    font-weight: bold;
+    background-color:rgba(16, 80, 49, 0.08);
     /*border: 1px solid red;*/
 }
 .section-container{
@@ -191,7 +197,7 @@ body{
     width: 65vw;
     height: auto;
     margin-top: 3rem;
-    background-color:  rgba(134, 250, 235, 0.50);
+    background-color:  rgba(134, 250, 235, 0.60);
     /*border: 1px solid red;*/
 }
 .article-container__tittle{
@@ -214,18 +220,18 @@ body{
     display: flex;
     margin-bottom: 2rem;
     margin-top: 0.5rem;
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     /** USE THIS PART FOR RESPONSIVE IMAGES*/
     width: 100%;
-    max-width: 550px;
-    height: 38vh;
-    object-position: 0rem -0rem; /* It works as backgroud position-y*/
+    max-width: 900px;
+    height: 50vh;
+    object-position: center 0rem; /* It works as backgroud position-y*/
     object-fit: cover; /* CUT AN IMAGE */
     transition: scale 0.7s, border 1s;
     /*box-sizing: border-box;*/
 }
 .article-container__complement:hover{
-    scale: 1.1;
+    scale: 1.02;
     cursor: pointer;
     box-shadow: 0rem 0rem 1rem 0.3rem #9CFA87;
 }
