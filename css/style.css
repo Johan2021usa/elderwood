@@ -1,0 +1,275 @@
+:root{
+    /*analogs*/
+    --clor-bg-nav-bar : #87FAC4;
+    --clor-bag-body: #86FAEB;
+
+    /* COLOR FONTS */
+    --color-font-dark: #17332F;
+    --color-font-shadow-dark: black;
+    --color-font-white: white;
+
+    --fn-p-line-height: 2rem;
+    
+    /* SIZE FONTS */
+    --fn-nav-bar-tittle: 2rem;
+    --fn-nav-bar-description: 1rem;
+    
+    --fn-section-tittle: 1.5rem;
+    --fn-section-paragraph: 1.3rem;
+
+    --fn-section-tittle-high-contrast: 3rem;
+    --fn-section-paragraph-high-contrast: 1.6rem;
+    
+    --fn-article-tittle: 1.3rem;
+    --fn-article-paragraph: 1.2rem;
+
+    --fn-info-tittle: 1.2rem;
+    --fn-info-paragraph: 1.1rem;
+
+    /*FOOTER*/
+    --clor-bg-footer : #87FAC4;
+
+}
+body{
+    /*default*/
+    padding: 0px;
+    margin: 0px;
+    background: var(--clor-bag-body) url(../images/las-hojas-de.png) repeat;
+    background-attachment: fixed;
+}
+/* NAVBAR */
+.header{
+    /*default*/
+    margin:0px;
+    padding: 0.7vw 16.5vw;
+    /*Main*/
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-between;
+    background-color: var(--clor-bg-nav-bar);
+    font-family: 'Montserrat', sans-serif;
+}
+.website-name{
+    /*Main*/
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    /*border: 1px solid red;*/
+}   
+.website-name__tittle{
+    font-size: var(--fn-nav-bar-tittle);
+    color: var(--color-font-dark);
+    height: max-content;
+    margin: 0vw 0vw 0vw 0vw;
+    /*border: 1px solid red;*/
+}
+.website-name__link{
+    text-decoration: none;
+    color: var(--color-font-dark);
+    transition: color 0.35s;
+}
+.website-name__link:hover{
+    color: var(--color-font-white);
+}
+.website-name__icon{
+    border-radius: 100px;
+    height: 50px;
+    margin-left: 1vw;
+    /*border: 1px solid red;*/
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0rem;
+    /*border: 1px solid red;*/
+}
+.navbar__list{
+    padding: 0rem;
+    margin: 0rem;
+    /*border: 1px solid blue;*/
+}
+.navbar__item{
+    list-style: none; /* Remove vignette */
+    margin: 0rem 1rem;
+    /*border: 1px solid red;*/
+}
+.navbar__option{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: var(--fn-article-tittle);
+    color: var(--color-font-dark);
+    text-transform: capitalize;
+    transition: color 0.15s;
+}
+.navbar__option:hover{
+    color: var(--color-font-white);
+}
+
+/* MAIN */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0rem 1rem;
+    /*border: 1px solid red;*/
+}
+.section-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+    margin: 4rem 0rem 1rem 0rem;
+    /*border: 1px solid red;*/
+}
+.section-info--wide-bg{
+    background-image: 
+    linear-gradient(to bottom, 
+        rgba(135, 250, 196, 0.97)0%, 
+        rgba(135, 250, 235, 0.20) 60%
+        /* Percent defines where color starts to apply*/
+    ),
+    url(../images/bgp-landing-page-1.jpg);
+    /* Add a gradient to a background image */
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0rem; /* Choose the part of a picture you want to choose y AXIS*/
+    height: 90vh;
+    width: 100vw;
+    margin: 0rem;
+    padding-top: 25vh;
+    /*border: 1px solid red;*/
+}
+.section-info__tittle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fn-section-tittle);
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+    /*border: 1px solid blue;*/
+}
+.section-info__tittle--high-contrast{
+    color: var(--color-font-white);
+    font-size: var(--fn-section-tittle-high-contrast);
+    text-shadow: var(--color-font-shadow-dark) 0rem 0rem 0.5rem;
+    /*border: 1px solid red;*/
+}
+.section-info__description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fn-section-paragraph);
+    text-align: left;
+    width: 65vw;
+    margin: 0rem;
+    line-height: var(--fn-p-line-height);
+    /*border: 1px solid blue;*/
+}
+.section-info__description--high-contrast{
+    color: var(--color-font-white);
+    font-size: var(--fn-section-paragraph-high-contrast);
+    text-shadow: var(--color-font-shadow-dark) 0rem 0.1rem 0.5rem;
+    text-align: center;
+    /*border: 1px solid red;*/
+}
+.section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    /*background-color:  rgba(134, 250, 235, 0.50);*/
+    /*border: 1px solid red;*/
+}
+.article-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    width: 65vw;
+    height: auto;
+    margin-top: 3rem;
+    background-color:  rgba(134, 250, 235, 0.50);
+    /*border: 1px solid red;*/
+}
+.article-container__tittle{
+    font-size: var(--fn-article-tittle);
+    text-transform: capitalize;
+    width: 100%;
+    margin: 0rem;
+    /*border: 1px solid blue;*/
+}
+.article-container__description{
+    font-size: var(--fn-article-paragraph);
+    line-height: var(--fn-p-line-height);
+    margin: 0.5rem 0rem;
+    width: 100%;
+    text-align: left;
+    /*border: 1px solid blue;*/
+
+}
+.article-container__complement{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    /** USE THIS PART FOR RESPONSIVE IMAGES*/
+    width: 100%;
+    max-width: 550px;
+    height: 38vh;
+    object-position: 0rem -0rem; /* It works as backgroud position-y*/
+    object-fit: cover; /* CUT AN IMAGE */
+    transition: scale 0.7s, border 1s;
+    /*box-sizing: border-box;*/
+}
+.article-container__complement:hover{
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 1rem 0.3rem #9CFA87;
+}
+.footer{
+    background-color: var(--clor-bg-footer);
+    height: max-content;
+    padding: 2vw 16.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.website-name--direction-column-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* RESPONSIVE */
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    /*border: 1px solid red;*/
+}
+.website-name__container{
+    display: flex;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+.website-name__description{
+    margin: 0.3vw 0vw;
+    font-weight: bold;
+    font-size: var(--fn-nav-bar-description);
+    font-style: italic;
+    /*border: 1px solid red;*/
+}
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.info-container__tittle{
+    text-transform: capitalize;
+    font-size: var(--fn-info-tittle);
+    font-weight: bold;
+}
+.info-container__paragraph{
+    text-transform: capitalize;
+    font-size: var(--fn-nav-bar-description);
+    margin: 0.8rem 0rem;
+    font-weight: normal;
+}
