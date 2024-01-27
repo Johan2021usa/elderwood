@@ -1,7 +1,7 @@
 :root{
     /*analogs*/
     --clor-bg-nav-bar : #87FAC4;
-    --clor-bag-body: #86FAEB;
+    --clor-bag-body: #EFFEF6;
 
     /* COLOR FONTS */
     --color-font-dark: #17332F;
@@ -35,7 +35,7 @@ body{
     /*default*/
     padding: 0px;
     margin: 0px;
-    background: var(--clor-bag-body) url(../images/las-hojas-de.png) repeat;
+    background: var(--clor-bag-body) url(../images/las-hojas-de.png) no-repeat center;
     background-attachment: fixed;
 }
 /* NAVBAR */
@@ -68,11 +68,9 @@ body{
 .website-name__link{
     text-decoration: none;
     color: var(--color-font-dark);
-    /*color: var(--color-font--pruple);*/
     transition: color 0.35s;
 }
 .website-name__link:hover{
-    /*color: var(--color-font-white);*/
     color: var(--color-font--pruple);
 }
 .website-name__icon{
@@ -127,6 +125,9 @@ body{
     margin: 4rem 0rem 1rem 0rem;
     /*border: 1px solid red;*/
 }
+.section-info--opacity-high{
+    background-color:  rgba(240, 255, 247, 0.80);
+}
 .section-info--wide-bg{
     background-image: 
     linear-gradient(to bottom, 
@@ -137,6 +138,7 @@ body{
     url(../images/bgp-landing-page-1.jpg);
     /* Add a gradient to a background image */
     /*background-attachment: fixed;*/
+    clip-path: polygon(0% 0%, 100% 0, 100% 85%, 51% 100%, 0 85%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0rem; /* Choose the part of a picture you want to choose y AXIS*/
@@ -186,7 +188,6 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    /*background-color:  rgba(134, 250, 235, 0.50);*/
     /*border: 1px solid red;*/
 }
 .article-container{
@@ -197,7 +198,7 @@ body{
     width: 65vw;
     height: auto;
     margin-top: 3rem;
-    background-color:  rgba(134, 250, 235, 0.60);
+    background-color:  rgba(240, 255, 247, 0.80);
     /*border: 1px solid red;*/
 }
 .article-container__tittle{
